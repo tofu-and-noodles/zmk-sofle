@@ -50,11 +50,11 @@
 
         macos {
             bindings = <
-&kp GRAVE                  &kp N1     &kp N2        &kp N3         &kp N4       &kp N5             &kp UP_ARROW     &kp N6       &kp N7       &kp N8          &kp N9         &kp N0     &lt 5 BACKSPACE
-&kp TAB                    &kp Q      &kp W         &kp E          &kp R        &kp T              &kp DOWN_ARROW   &kp Y        &kp U        &kp I           &kp O          &kp P      &kp BSLH
-&mt LA(LC(LSHIFT)) ESCAPE  &kp A      &kp S         &kp D          &kp F        &kp G              &kp LEFT_ARROW   &kp H        &kp J        &kp K           &kp L          &kp SEMI   &kp APOS
-&kp LSHFT                  &kp Z      &kp X         &kp C          &kp V        &kp B              &kp RIGHT_ARROW  &kp N        &kp M        &kp COMMA       &kp DOT        &kp FSLH   &kp RIGHT_SHIFT
-&kp C_MUTE                 &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META  &lt 4 SPACE  &lt 1 BACKSPACE    &kp ENTER        &lt 4 ENTER  &lt 1 SPACE  &kp RIGHT_META  &kp RIGHT_ALT  &kp RCTRL
+&kp GRAVE                  &kp N1       &kp N2        &kp N3         &kp N4       &kp N5             &kp UP_ARROW     &kp N6       &kp N7       &kp N8          &kp N9         &kp N0     &lt 5 BACKSPACE
+&kp TAB                    &kp Q        &kp W         &kp E          &kp R        &kp T              &kp DOWN_ARROW   &kp Y        &kp U        &kp I           &kp O          &kp P      &kp BSLH
+&mt LA(LC(LSHIFT)) ESCAPE  &mt LCTRL A  &mt LEFT_ALT S        &mt LEFT_META D          &mt LSHFT F        &kp G              &kp LEFT_ARROW   &mt RSHFT H         &mt RIGHT_META J       &mt RIGHT_ALT K           &mt RCTRL L          &kp SEMI   &kp APOS
+&kp LSHFT                  &kp Z        &kp X         &kp C          &kp V        &kp B              &kp RIGHT_ARROW  &kp N        &kp M        &kp COMMA       &kp DOT        &kp FSLH   &kp RIGHT_SHIFT
+&kp C_MUTE                 &kp LCTRL    &kp LEFT_ALT  &kp LEFT_META  &lt 4 SPACE  &lt 1 BACKSPACE    &kp ENTER        &lt 4 ENTER  &lt 1 SPACE  &kp RIGHT_META  &kp RIGHT_ALT  &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -81,7 +81,7 @@
             bindings = <
 &kp GRAVE                  &kp N1         &kp N2        &kp N3     &kp N4       &kp N5             &kp UP_ARROW     &kp N6       &kp N7       &kp N8             &kp N9         &kp N0          &lt 5 BACKSPACE
 &kp TAB                    &kp Q          &kp W         &kp E      &kp R        &kp T              &kp DOWN_ARROW   &kp Y        &kp U        &kp I              &kp O          &kp P           &kp BSLH
-&mt LA(LC(LSHIFT)) ESCAPE  &kp A          &kp S         &kp D      &kp F        &kp G              &kp LEFT_ARROW   &kp H        &kp J        &kp K              &kp L          &kp SEMI        &kp APOS
+&mt LA(LC(LSHIFT)) ESCAPE  &mt LEFT_META A  &mt LEFT_ALT S        &mt LCTRL D          &mt LSHFT F        &kp G              &kp LEFT_ARROW   &mt RSHFT H         &mt RCTRL J       &mt RIGHT_ALT K           &mt RIGHT_META L          &kp SEMI   &kp APOS
 &kp LSHFT                  &kp Z          &kp X         &kp C      &kp V        &kp B              &kp RIGHT_ARROW  &kp N        &kp M        &kp COMMA          &kp DOT        &kp FSLH        &kp RIGHT_SHIFT
 &kp C_MUTE                 &kp LEFT_META  &kp LEFT_ALT  &kp LCTRL  &lt 4 SPACE  &lt 3 BACKSPACE    &kp ENTER        &lt 4 ENTER  &lt 3 SPACE  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_META
             >;
