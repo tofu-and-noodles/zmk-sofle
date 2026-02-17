@@ -98,8 +98,3 @@
         };
     };
 };
-Implemented custom layers for:
-- Base
-- Nav
-- Fumbol
-- Keyboard functions
