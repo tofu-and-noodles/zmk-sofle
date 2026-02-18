@@ -5,6 +5,11 @@ Original READMEs:
 - [English](README_EN.md)
 - [中文](README.md)
 
+## Useful References
+- https://github.com/urob/zmk-config
+- https://github.com/argenkiwi/kenkyo
+- https://github.com/a741725193/zmk-sofle
+
 ## Quick-Start Guide
 1. Grab latest firmware from Actions tab. For each half:
 2. Plug in via USB.
