@@ -45,16 +45,44 @@
         tap-ms = <30>;
     };
 
+    hrm_l: hrm_l {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HRM_L";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <280>;
+        quick-tap-ms = <175>;
+        require-prior-idle-ms = <150>;
+        hold-trigger-on-release;
+        hold-trigger-key-positions = <7 20 24 25 33 34 35 36 37 38 46 47 48 49 50 51 8 10 11 12 21 22 23 24 25 9>;
+    };
+
+    hrm_r: hrm_r {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HRM_R";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <280>;
+        quick-tap-ms = <175>;
+        require-prior-idle-ms = <150>;
+        hold-trigger-on-release;
+        hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 26 27 28 29 30 31 39 40 41 42 43 44>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         macos {
             bindings = <
-&kp GRAVE                  &kp N1       &kp N2          &kp N3           &kp N4       &kp N5           &kp UP_ARROW     &kp N6       &kp N7            &kp N8           &kp N9       &kp N0    &lt 5 BACKSPACE
-&kp TAB                    &kp Q        &kp W           &kp E            &kp R        &kp T            &kp DOWN_ARROW   &kp Y        &kp U             &kp I            &kp O        &kp P     &kp BSLH
-&mt LA(LC(LSHIFT)) ESCAPE  &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_META D  &mt LSHFT F  &kp G            &kp LEFT_ARROW   &mt RSHFT H  &mt RIGHT_META J  &mt RIGHT_ALT K  &mt RCTRL L  &kp SEMI  &kp APOS
-&kp LSHFT                  &kp Z        &kp X           &kp C            &kp V        &kp B            &kp RIGHT_ARROW  &kp N        &kp M             &kp COMMA        &kp DOT      &kp FSLH  &kp RIGHT_SHIFT
-&kp C_MUTE                 &kp F23      &kp DEL         &kp LEFT_SHIFT   &lt 4 SPACE  &kp BACKSPACE    &kp ENTER        &kp ENTER    &lt 1 SPACE       &kp RSHFT        &kp TAB      &kp F24
+&kp GRAVE                  &kp N1          &kp N2             &kp N3              &kp N4          &kp N5             &kp UP_ARROW     &kp N6       &kp N7          &kp N8          &kp N9         &kp N0             &lt 5 BACKSPACE
+&kp TAB                    &kp Q           &kp W              &kp E               &kp R           &kp T              &kp DOWN_ARROW   &kp Y        &kp U           &kp I           &kp O          &kp P              &kp BSLH
+&mt LA(LC(LSHIFT)) ESCAPE  &hrm_l LCTRL A  &hrm_l LEFT_ALT S  &hrm_l LEFT_META D  &hrm_l LSHFT F  &kp G              &kp LEFT_ARROW   &kp H        &hrm_r RSHFT J  &hrm_r RMETA K  &hrm_r RALT L  &hrm_r RCTRL SEMI  &kp APOS
+&kp LSHFT                  &kp Z           &kp X              &kp C               &kp V           &kp B              &kp RIGHT_ARROW  &kp N        &kp M           &kp COMMA       &kp DOT        &kp FSLH           &kp RIGHT_SHIFT
+&kp C_MUTE                 &kp F23         &kp DEL            &kp LEFT_SHIFT      &lt 4 SPACE     &kp BACKSPACE      &kp ENTER        &kp ENTER    &lt 1 SPACE     &kp RSHFT       &kp TAB        &kp F24
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -79,11 +107,11 @@
         windows {
             display-name = "windows";
             bindings = <
-&kp GRAVE                  &kp N1           &kp N2          &kp N3       &kp N4       &kp N5             &kp UP_ARROW     &kp N6       &kp N7       &kp N8             &kp N9            &kp N0          &lt 5 BACKSPACE
-&kp TAB                    &kp Q            &kp W           &kp E        &kp R        &kp T              &kp DOWN_ARROW   &kp Y        &kp U        &kp I              &kp O             &kp P           &kp BSLH
-&mt LA(LC(LSHIFT)) ESCAPE  &mt LEFT_META A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHFT F  &kp G              &kp LEFT_ARROW   &mt RSHFT H  &mt RCTRL J  &mt RIGHT_ALT K    &mt RIGHT_META L  &kp SEMI        &kp APOS
-&kp LSHFT                  &kp Z            &kp X           &kp C        &kp V        &kp B              &kp RIGHT_ARROW  &kp N        &kp M        &kp COMMA          &kp DOT           &kp FSLH        &kp RIGHT_SHIFT
-&kp C_MUTE                 &kp F23      &kp DEL         &kp LEFT_SHIFT   &lt 4 SPACE  &kp BACKSPACE    &kp ENTER        &kp ENTER    &lt 1 SPACE       &kp RSHFT        &kp TAB      &kp F24
+&kp GRAVE                  &kp N1             &kp N2             &kp N3          &kp N4          &kp N5             &kp UP_ARROW     &kp N6       &kp N7          &kp N8             &kp N9         &kp N0             &lt 5 BACKSPACE
+&kp TAB                    &kp Q              &kp W              &kp E           &kp R           &kp T              &kp DOWN_ARROW   &kp Y        &kp U           &kp I              &kp O          &kp P              &kp BSLH
+&mt LA(LC(LSHIFT)) ESCAPE  &hrm_l LEFT_GUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &hrm_l LSHFT F  &kp G              &kp LEFT_ARROW   &kp H        &hrm_r RSHFT J  &hrm_r RCTRL K     &hrm_r RALT L  &hrm_r RMETA SEMI  &kp APOS
+&kp LSHFT                  &kp Z              &kp X              &kp C           &kp V           &kp B              &kp RIGHT_ARROW  &kp N        &kp M           &kp COMMA          &kp DOT        &kp FSLH           &kp RIGHT_SHIFT
+&kp C_MUTE                 &kp F23            &kp DEL            &kp LEFT_SHIFT  &lt 4 SPACE     &kp BACKSPACE      &kp ENTER        &kp ENTER    &lt 1 SPACE     &kp RSHFT          &kp TAB        &kp F24
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -93,11 +121,11 @@
         win_nav {
             display-name = "win_nav";
             bindings = <
-&none       &none   &none           &none           &none            &none       &mmv MOVE_UP     &none           &none            &none          &none              &none          &none
-&none       &none   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB4    &mmv MOVE_DOWN   &kp HOME        &kp LC(LEFT)     &kp LC(RIGHT)  &kp END            &kp PG_UP      &none
-&kp CAPS    &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN         &kp UP_ARROW   &kp RIGHT          &kp PAGE_DOWN  &none
-&trans      &none   &none           &mkp MCLK       &none            &none       &mmv MOVE_RIGHT  &kp LG(K_BACK)  &kp LS(LC(TAB))  &kp LC(TAB)    &kp LG(K_FORWARD)  &none          &trans
-&kp C_MUTE  &trans  &trans          &trans          &trans           &trans      &mkp LCLK        &trans          &trans           &trans         &trans             &trans
+&none       &none   &none           &none           &none            &none       &mmv MOVE_UP     &none           &none            &none          &none          &none          &none
+&none       &none   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB4    &mmv MOVE_DOWN   &kp HOME        &kp LC(LEFT)     &kp LC(RIGHT)  &kp END        &kp PG_UP      &none
+&kp CAPS    &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN         &kp UP_ARROW   &kp RIGHT      &kp PAGE_DOWN  &none
+&trans      &none   &none           &mkp MCLK       &none            &none       &mmv MOVE_RIGHT  &kp K_BACK      &kp LS(LC(TAB))  &kp LC(TAB)    &kp K_FORWARD  &none          &trans
+&kp C_MUTE  &trans  &trans          &trans          &trans           &trans      &mkp LCLK        &trans          &trans           &trans         &trans         &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -125,8 +153,6 @@
 &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD    &none  &none       &none  &none  &none  &none  &none
 &none            &none            &none            &none            &none            &none              &none  &tog 2      &none  &none  &none  &none
             >;
-
-            label = "kb_func";
         };
     };
 };
