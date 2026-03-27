@@ -95,10 +95,10 @@
         macos {
             bindings = <
 &kp GRAVE                 &kp N1          &kp N2             &kp N3                    &kp N4               &kp N5           &kp UP_ARROW     &kp N6     &kp N7          &kp N8                 &kp N9         &kp N0             &lt 6 BACKSPACE
-&kp TAB                   &kp Q           &kp W              &kp E                     &kp R                &kp T            &kp DOWN_ARROW   &kp Y      &kp U           &kp I                  &kp O          &kp P              &kp BSLH
+&mt LC(LSHIFT) TAB        &kp Q           &kp W              &kp E                     &kp R                &kp T            &kp DOWN_ARROW   &kp Y      &kp U           &kp I                  &kp O          &kp P              &kp BSLH
 &mt LA(LS(LCTRL)) ESCAPE  &hrm_l LCTRL A  &hrm_l LEFT_ALT S  &hrm_l LEFT_META D        &hrm_l LSHFT F       &kp G            &kp LEFT_ARROW   &kp H      &hrm_r RSHFT J  &hrm_r RMETA K         &hrm_r RALT L  &hrm_r RCTRL SEMI  &hrm_r LA(LS(LCTRL)) APOSTROPHE
 &kp LSHFT                 &kp Z           &kp X              &kp C                     &kp V                &kp B            &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA              &kp DOT        &kp FSLH           &kp RIGHT_SHIFT
-&kp C_MUTE                &kp F23         &mo 5              &mt LS(LA(LCTRL)) DELETE  &lt_sk 4 LEFT_SHIFT  &kp BACKSPACE    &kp ENTER        &kp ENTER  &lt 1 SPACE     &mt LS(LA(LCTRL)) TAB  &mo 5          &kp F24
+&kp C_MUTE                &kp F23         &mo 5              &mt LC(LSHIFT) DELETE     &lt_sk 4 LEFT_SHIFT  &kp BACKSPACE    &kp ENTER        &kp ENTER  &lt 1 SPACE     &mt LC(LSHIFT) TAB     &mo 5          &kp F24
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -124,10 +124,10 @@
             display-name = "windows";
             bindings = <
 &kp GRAVE                  &kp N1             &kp N2             &kp N3          &kp N4          &kp N5           &kp UP_ARROW     &kp N6     &kp N7          &kp N8          &kp N9         &kp N0             &lt 6 BACKSPACE
-&kp TAB                    &kp Q              &kp W              &kp E           &kp R           &kp T            &kp DOWN_ARROW   &kp Y      &kp U           &kp I           &kp O          &kp P              &kp BSLH
+&mt LC(LSHIFT) TAB         &kp Q              &kp W              &kp E           &kp R           &kp T            &kp DOWN_ARROW   &kp Y      &kp U           &kp I           &kp O          &kp P              &kp BSLH
 &mt LA(LC(LSHIFT)) ESCAPE  &hrm_l LEFT_GUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &hrm_l LSHFT F  &kp G            &kp LEFT_ARROW   &kp H      &hrm_r RSHFT J  &hrm_r RCTRL K  &hrm_r RALT L  &hrm_r RMETA SEMI  &kp APOS
 &kp LSHFT                  &kp Z              &kp X              &kp C           &kp V           &kp B            &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA       &kp DOT        &kp FSLH           &kp RIGHT_SHIFT
-&kp C_MUTE                 &kp F23            &mo 5              &mt LS(LA(LCTRL)) DELETE  &lt_sk 4 LEFT_SHIFT  &kp BACKSPACE    &kp ENTER        &kp ENTER  &lt 3 SPACE     &mt LS(LA(LCTRL)) TAB  &mo 5          &kp F24
+&kp C_MUTE                 &kp F23            &mo 5              &mt LC(LSHIFT) DELETE     &lt_sk 4 LEFT_SHIFT  &kp BACKSPACE    &kp ENTER        &kp ENTER  &lt 3 SPACE     &mt LC(LSHIFT) TAB     &mo 5          &kp F24
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
