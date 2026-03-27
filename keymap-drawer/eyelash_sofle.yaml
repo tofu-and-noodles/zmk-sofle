@@ -14,7 +14,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', h: kb_func}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
   - Q
   - W
   - E
@@ -56,13 +56,13 @@ layers:
   - $$mdi:volume-off$$
   - F23
   - media
-  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Sft+Alt+$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: fumbol}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: mac_nav}
-  - {t: '$$mdi:keyboard-tab$$', h: 'Sft+Alt+$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
   - media
   - F24
   mac_nav:
@@ -144,7 +144,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', h: kb_func}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
   - Q
   - W
   - E
@@ -186,13 +186,13 @@ layers:
   - $$mdi:volume-off$$
   - F23
   - media
-  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Sft+Alt+$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: fumbol}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: win_nav}
-  - {t: '$$mdi:keyboard-tab$$', h: 'Sft+Alt+$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
   - media
   - F24
   win_nav:
