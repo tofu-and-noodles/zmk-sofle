@@ -14,7 +14,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', h: kb_func}
-  - {t: '$$mdi:keyboard-tab$$', h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: Meh+LGUI}
   - Q
   - W
   - E
@@ -58,9 +58,9 @@ layers:
   - mouse-and-media
   - {t: '$$mdi:backspace-reverse-outline$$', h: numbol}
   - {t: '$$mdi:apple-keyboard-shift$$', h: mac_nav}
-  - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:backspace$$', h: Meh+LGUI}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-return$$', h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', h: Meh+LGUI}
   - {t: '$$mdi:keyboard-space$$', h: mac_nav}
   - {t: '$$mdi:keyboard-tab$$', h: numbol}
   - mouse-and-media
@@ -86,10 +86,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - HOME
+  - Gui+$$mdi:arrow-left-bold$$
   - Alt+$$mdi:arrow-left-bold$$
   - Alt+$$mdi:arrow-right-bold$$
-  - END
+  - Gui+$$mdi:arrow-right-bold$$
   - PG UP
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Alt+Sft+$$mdi:apple-keyboard-control$$
@@ -144,7 +144,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', h: kb_func}
-  - {t: '$$mdi:keyboard-tab$$', h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: Meh+LGUI}
   - Q
   - W
   - E
@@ -157,7 +157,7 @@ layers:
   - O
   - P
   - {t: \, s: '|'}
-  - {t: '$$mdi:keyboard-esc$$', h: 'Alt+Ctl+$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-esc$$', h: 'Alt+Sft+$$mdi:apple-keyboard-control$$'}
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
@@ -188,9 +188,9 @@ layers:
   - mouse-and-media
   - {t: '$$mdi:backspace-reverse-outline$$', h: numbol}
   - {t: '$$mdi:apple-keyboard-shift$$', h: win_nav}
-  - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:backspace$$', h: Meh+LGUI}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-return$$', h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', h: Meh+LGUI}
   - {t: '$$mdi:keyboard-space$$', h: win_nav}
   - {t: '$$mdi:keyboard-tab$$', h: numbol}
   - mouse-and-media
@@ -222,7 +222,7 @@ layers:
   - END
   - PG UP
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Alt+Ctl+$$mdi:apple-keyboard-shift$$
+  - Alt+Sft+$$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
@@ -347,8 +347,8 @@ layers:
   - '&mkp MB4'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
