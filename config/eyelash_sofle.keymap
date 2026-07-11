@@ -32,13 +32,13 @@
         drag_lock: drag_lock {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &mkp LCLK>;
+            bindings = <&macro_press>, <&mkp LCLK>;
         };
 
         drag_unlock: drag_unlock {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_release &mkp LCLK>;
+            bindings = <&macro_release>, <&mkp LCLK>;
         };
     };
 
@@ -105,49 +105,25 @@
     keymap {
         compatible = "zmk,keymap";
 
-        macos {
+        win {
             bindings = <
-&kp GRAVE                 &kp N1          &kp N2             &kp N3                    &kp N4               &kp N5           &none            &kp N6     &kp N7          &kp N8                 &kp N9         &kp N0             &lt 7 BACKSPACE
-&mt LS(LC(LA(LGUI))) TAB        &kp Q           &kp W              &kp E                     &kp R                &kp T            &none            &kp Y      &kp U           &kp I                  &kp O          &kp P              &kp BSLH
-&mt LA(LS(LCTRL)) ESCAPE  &hrm_l LCTRL A  &hrm_l LEFT_ALT S  &hrm_l LEFT_META D        &hrm_l LSHFT F       &kp G            &none            &kp H      &hrm_r RSHFT J  &hrm_r RMETA K         &hrm_r RALT L  &hrm_r RCTRL SEMI  &hrm_r LA(LS(LCTRL)) APOSTROPHE
-&kp LSHFT                 &kp Z           &kp X              &kp C                     &kp V                &kp B            &none            &kp N      &kp M           &kp COMMA              &kp DOT        &kp FSLH           &kp RIGHT_SHIFT
-&none                     &kp F23         &mo 6              &lt 5 DELETE              &lt_sk 1 LEFT_SHIFT  &mt LS(LC(LA(LGUI))) BACKSPACE    &none            &mt LS(LC(LA(LGUI))) ENTER  &lt 1 SPACE     &lt 5 TAB              &mo 6          &kp F24
-            >;
-
-            display-name = "macos";
-        };
-
-        mac_nav {
-            bindings = <
-&none                    &none      &none         &none         &none      &none       &none            &none                 &none            &none          &none                  &none          &none
-&none                    &none      &none         &none         &none      &none       &none            &kp LG(LEFT)          &kp LA(LEFT)     &kp LA(RIGHT)  &kp LG(RIGHT)          &kp PG_UP      &none
-&kp LA(LS(LCTRL))        &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META &kp LSHFT  &none       &none            &kp LEFT_ARROW        &kp DOWN         &kp UP_ARROW   &kp RIGHT              &kp PAGE_DOWN  &none
-&trans                   &none      &none         &none         &none      &none       &none            &kp LG(LEFT_BRACKET)  &kp LS(LC(TAB))  &kp LC(TAB)    &kp LG(RIGHT_BRACKET)  &none          &trans
-&none                    &trans     &trans        &trans        &trans     &trans      &none            &trans                &trans           &trans         &trans                 &trans
-            >;
-
-            display-name = "mac_nav";
-        };
-
-        windows {
-            bindings = <
-&kp GRAVE                  &kp N1             &kp N2             &kp N3          &kp N4          &kp N5           &none            &kp N6     &kp N7          &kp N8          &kp N9         &kp N0             &lt 7 BACKSPACE
-&mt LS(LC(LA(LGUI))) TAB         &kp Q              &kp W              &kp E           &kp R           &kp T            &none            &kp Y      &kp U           &kp I           &kp O          &kp P              &kp BSLH
-&mt LA(LS(LCTRL)) ESCAPE  &hrm_l LEFT_GUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &hrm_l LSHFT F  &kp G            &none            &kp H      &hrm_r RSHFT J  &hrm_r RCTRL K  &hrm_r RALT L  &hrm_r RMETA SEMI  &kp APOS
-&kp LSHFT                  &kp Z              &kp X              &kp C           &kp V           &kp B            &none            &kp N      &kp M           &kp COMMA       &kp DOT        &kp FSLH           &kp RIGHT_SHIFT
-&none                      &kp F23            &mo 6              &lt 5 DELETE              &lt_sk 4 LEFT_SHIFT  &mt LS(LC(LA(LGUI))) BACKSPACE    &none            &mt LS(LC(LA(LGUI))) ENTER  &lt 4 SPACE     &lt 5 TAB              &mo 6          &kp F24
+&kp GRAVE                 &kp N1             &kp N2             &kp N3          &kp N4               &kp N5                            &none  &kp N6                      &kp N7          &kp N8          &kp N9         &kp N0             &lt 7 BACKSPACE
+&mt LS(LC(LA(LGUI))) TAB  &kp Q              &kp W              &kp E           &kp R                &kp T                             &none  &kp Y                       &kp U           &kp I           &kp O          &kp P              &kp BSLH
+&mt LA(LS(LCTRL)) ESCAPE  &hrm_l LEFT_GUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &hrm_l LSHFT F       &kp G                             &none  &kp H                       &hrm_r RSHFT J  &hrm_r RCTRL K  &hrm_r RALT L  &hrm_r RMETA SEMI  &kp APOS
+&kp LSHFT                 &kp Z              &kp X              &kp C           &kp V                &kp B                             &none  &kp N                       &kp M           &kp COMMA       &kp DOT        &kp FSLH           &kp RIGHT_SHIFT
+&none                     &kp F23            &mo 6              &lt 5 DELETE    &lt_sk 2 LEFT_SHIFT  &mt LS(LC(LA(LGUI))) BACKSPACE    &none  &mt LS(LC(LA(LGUI))) ENTER  &lt 2 SPACE     &lt 5 TAB       &mo 6          &kp F24
             >;
 
             display-name = "windows";
         };
 
-        windows-basic {
+        win-v {
             bindings = <
-&kp GRAVE                  &kp N1             &kp N2             &kp N3          &kp N4          &kp N5           &none            &kp N6     &kp N7          &kp N8          &kp N9         &kp N0             &lt 7 BACKSPACE
-&kp TAB                    &kp Q              &kp W              &kp E           &kp R           &kp T            &none            &kp Y      &kp U           &kp I           &kp O          &kp P              &kp BSLH
-&mt LA(LS(LCTRL)) ESCAPE  &kp A              &kp S              &kp D           &kp F           &kp G            &none            &kp H      &kp J           &kp K           &kp L          &kp SEMI           &kp APOS
-&kp LSHFT                  &kp Z              &kp X              &kp C           &kp V           &kp B            &none            &kp N      &kp M           &kp COMMA       &kp DOT        &kp FSLH           &kp RIGHT_SHIFT
-&none                      &kp LGUI           &kp LALT           &kp LCTRL                &kp SPACE            &kp BACKSPACE                     &none            &kp ENTER                   &kp SPACE       &kp RCTRL              &kp RALT       &kp RGUI
+&kp GRAVE                 &kp N1    &kp N2    &kp N3     &kp N4     &kp N5           &none  &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &lt 7 BACKSPACE
+&kp TAB                   &kp Q     &kp W     &kp E      &kp R      &kp T            &none  &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSLH
+&mt LA(LS(LCTRL)) ESCAPE  &kp A     &kp S     &kp D      &kp F      &kp G            &none  &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp APOS
+&kp LSHFT                 &kp Z     &kp X     &kp C      &kp V      &kp B            &none  &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RIGHT_SHIFT
+&none                     &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &kp BACKSPACE    &none  &kp ENTER  &kp SPACE  &kp RCTRL  &kp RALT  &kp RGUI
             >;
 
             display-name = "windows-basic";
@@ -155,23 +131,47 @@
 
         win_nav {
             bindings = <
-&none                    &none        &none         &none      &none      &none       &none            &none           &none            &none          &none          &none          &none
-&none                    &none        &none         &none      &none      &none       &none            &kp HOME        &kp LC(LEFT)     &kp LC(RIGHT)  &kp END        &kp PG_UP      &none
-&kp LA(LS(LCTRL))        &kp LEFT_GUI &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none       &none            &kp LEFT_ARROW  &kp DOWN         &kp UP_ARROW   &kp RIGHT      &kp PAGE_DOWN  &none
-&trans                   &none        &none         &none      &none      &none       &none            &kp C_AC_BACK   &kp LS(LC(TAB))  &kp LC(TAB)    &kp C_AC_FORWARD  &none          &trans
-&none                    &trans       &trans        &trans     &trans     &trans      &none            &trans          &trans           &trans         &trans         &trans
+&none              &none         &none         &none      &none      &none     &none  &none           &none            &none          &none             &none          &none
+&none              &none         &none         &none      &none      &none     &none  &kp HOME        &kp LC(LEFT)     &kp LC(RIGHT)  &kp END           &kp PG_UP      &none
+&kp LA(LS(LCTRL))  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none     &none  &kp LEFT_ARROW  &kp DOWN         &kp UP_ARROW   &kp RIGHT         &kp PAGE_DOWN  &none
+&trans             &none         &none         &none      &none      &none     &none  &kp C_AC_BACK   &kp LS(LC(TAB))  &kp LC(TAB)    &kp C_AC_FORWARD  &none          &trans
+&none              &trans        &trans        &trans     &trans     &trans    &none  &trans          &trans           &trans         &trans            &trans
             >;
 
             display-name = "win_nav";
         };
 
+        macos {
+            bindings = <
+&kp GRAVE                 &kp N1          &kp N2             &kp N3              &kp N4               &kp N5                            &none  &kp N6                      &kp N7          &kp N8          &kp N9         &kp N0             &lt 7 BACKSPACE
+&mt LS(LC(LA(LGUI))) TAB  &kp Q           &kp W              &kp E               &kp R                &kp T                             &none  &kp Y                       &kp U           &kp I           &kp O          &kp P              &kp BSLH
+&mt LA(LS(LCTRL)) ESCAPE  &hrm_l LCTRL A  &hrm_l LEFT_ALT S  &hrm_l LEFT_META D  &hrm_l LSHFT F       &kp G                             &none  &kp H                       &hrm_r RSHFT J  &hrm_r RMETA K  &hrm_r RALT L  &hrm_r RCTRL SEMI  &hrm_r LA(LS(LCTRL)) APOSTROPHE
+&kp LSHFT                 &kp Z           &kp X              &kp C               &kp V                &kp B                             &none  &kp N                       &kp M           &kp COMMA       &kp DOT        &kp FSLH           &kp RIGHT_SHIFT
+&none                     &kp F23         &mo 6              &lt 5 DELETE        &lt_sk 4 LEFT_SHIFT  &mt LS(LC(LA(LGUI))) BACKSPACE    &none  &mt LS(LC(LA(LGUI))) ENTER  &lt 4 SPACE     &lt 5 TAB       &mo 6          &kp F24
+            >;
+
+            display-name = "macos";
+        };
+
+        mac_nav {
+            bindings = <
+&none              &none      &none         &none          &none      &none     &none  &none                 &none            &none          &none                  &none          &none
+&none              &none      &none         &none          &none      &none     &none  &kp LG(LEFT)          &kp LA(LEFT)     &kp LA(RIGHT)  &kp LG(RIGHT)          &kp PG_UP      &none
+&kp LA(LS(LCTRL))  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_META  &kp LSHFT  &none     &none  &kp LEFT_ARROW        &kp DOWN         &kp UP_ARROW   &kp RIGHT              &kp PAGE_DOWN  &none
+&trans             &none      &none         &none          &none      &none     &none  &kp LG(LEFT_BRACKET)  &kp LS(LC(TAB))  &kp LC(TAB)    &kp LG(RIGHT_BRACKET)  &none          &trans
+&none              &trans     &trans        &trans         &trans     &trans    &none  &trans                &trans           &trans         &trans                 &trans
+            >;
+
+            display-name = "mac_nav";
+        };
+
         numbol {
             bindings = <
-&kp F1  &kp F2         &kp F3            &kp F4            &kp F5            &kp F6                   &none            &kp F7             &kp F8        &kp F9        &kp F10       &kp F11    &kp F12
-&none   &kp LS(GRAVE)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(LEFT_BRACKET)     &none            &kp LEFT_BRACKET   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp GRAVE  &none
-&trans  &kp LS(MINUS)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(RIGHT_BRACKET)    &none            &kp RIGHT_BRACKET  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &none
-&trans  &kp LS(EQUAL)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(BACKSLASH)        &none            &kp BSLH           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL  &trans
-&none   &trans         &kp LS(N0)        &trans            &trans            &trans                   &none            &trans             &trans        &trans        &kp N0        &trans
+&kp F1  &kp F2         &kp F3            &kp F4            &kp F5            &kp F6                   &none  &kp F7             &kp F8        &kp F9        &kp F10       &kp F11    &kp F12
+&none   &kp LS(GRAVE)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(LEFT_BRACKET)     &none  &kp LEFT_BRACKET   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp GRAVE  &none
+&trans  &kp LS(MINUS)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(RIGHT_BRACKET)    &none  &kp RIGHT_BRACKET  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &none
+&trans  &kp LS(EQUAL)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(BACKSLASH)        &none  &kp BSLH           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL  &trans
+&none   &trans         &kp LS(N0)        &trans            &trans            &trans                   &none  &trans             &trans        &trans        &kp N0        &trans
             >;
 
             display-name = "numbol";
@@ -179,11 +179,11 @@
 
         mouse-and-media {
             bindings = <
-&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_SEARCH  &kp F5  &kp F6    &none    &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
-&none  &td_drag   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB4  &none  &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none               &none       &none
-&none  &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5  &none  &kp K_PREV  &kp C_REWIND          &kp LA(C_PLAY_PAUSE)  &kp C_FAST_FORWARD  &kp C_NEXT  &none
-&none  &none      &none           &mkp MCLK       &none            &none     &none  &none       &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_MUTE          &none       &none
-&none  &none      &none           &none           &none            &none     &none  &none       &none                 &none                 &none               &none
+&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_SEARCH  &kp F5           &kp F6      &none  &kp C_PREV  &kp C_PLAY_PAUSE      &kp C_NEXT            &kp C_MUTE          &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+&none                 &td_drag              &mkp LCLK                          &mmv MOVE_UP     &mkp RCLK        &mkp MB4    &none  &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none               &none              &none
+&none                 &none                 &mmv MOVE_LEFT                     &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &mkp MB5    &none  &kp K_PREV  &kp C_REWIND          &kp LA(C_PLAY_PAUSE)  &kp C_FAST_FORWARD  &kp C_NEXT         &none
+&none                 &none                 &none                              &mkp MCLK        &none            &none       &none  &none       &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_MUTE          &none              &none
+&none                 &none                 &none                              &none            &none            &none       &none  &none       &none                 &none                 &none               &none
             >;
 
             display-name = "mouse-and-media";
@@ -191,15 +191,14 @@
 
         kb_func {
             bindings = <
-&out OUT_TOG     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &none  &bt BT_CLR  &none  &none  &none  &none  &none
-&none            &none            &none            &none            &none            &none              &none  &none       &none  &none  &none  &none  &none
-&none            &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI    &none  &none       &none  &none  &none  &none  &none
-&rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD    &none  &none       &none  &none  &none  &none  &none
-&none            &none            &none            &none            &none            &none              &none  &tog 2      &tog 3  &none  &none  &none
+&out OUT_TOG     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &none  &bt BT_CLR  &none   &none  &none  &none  &none
+&none            &none            &none            &none            &none            &none              &none  &none       &none   &none  &none  &none  &none
+&none            &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI    &none  &none       &none   &none  &none  &none  &none
+&rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD    &none  &none       &none   &none  &none  &none  &none
+&none            &none            &none            &none            &none            &none              &none  &tog 0      &tog 1  &none  &none  &none
             >;
 
             display-name = "kb_func";
         };
-
     };
 };
