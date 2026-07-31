@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  windows:
+  win:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -55,17 +55,17 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F23
-  - mouse-and-media
+  - m&m
   - {t: '$$mdi:backspace-reverse-outline$$', h: numbol}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: win_nav}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:backspace$$', h: Meh+LGUI}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-return$$', h: Meh+LGUI}
   - {t: '$$mdi:keyboard-space$$', h: win_nav}
   - {t: '$$mdi:keyboard-tab$$', h: numbol}
-  - mouse-and-media
+  - m&m
   - F24
-  windows-basic:
+  win_basic:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -187,11 +187,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -250,15 +250,15 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F23
-  - mouse-and-media
+  - m&m
   - {t: '$$mdi:backspace-reverse-outline$$', h: numbol}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: mac_nav}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:backspace$$', h: Meh+LGUI}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-return$$', h: Meh+LGUI}
   - {t: '$$mdi:keyboard-space$$', h: mac_nav}
   - {t: '$$mdi:keyboard-tab$$', h: numbol}
-  - mouse-and-media
+  - m&m
   - F24
   mac_nav:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -317,11 +317,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -390,7 +390,7 @@ layers:
   - {type: held alternate}
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
-  mouse-and-media:
+  m&m:
   - $$mdi:brightness-7$$
   - $$mdi:brightness-5$$
   - AC DESKTOP SHOW ALL WINDOWS
@@ -516,7 +516,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: macos, h: toggle}
-  - {t: windows-basic, h: toggle}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: win, h: toggle}
+  - {t: win_basic, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
