@@ -91,11 +91,11 @@
         hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 26 27 28 29 30 31 39 40 41 42 43 44 52 53 54 55 56 57 58 59 60 61 62 63>;
     };
 
-    lt_sk: lt_sk {
+    hold_sticky: hold_sticky {
         compatible = "zmk,behavior-hold-tap";
-        label = "LT_SK";
+        label = "HOLD_STICKY";
         #binding-cells = <2>;
-        bindings = <&mo>, <&sk>;
+        bindings = <&kp>, <&sk>;
 
         flavor = "balanced";
         tapping-term-ms = <200>;
@@ -111,7 +111,7 @@
 &mt LS(LC(LA(LGUI))) TAB  &kp Q              &kp W              &kp E           &kp R                &kp T                             &none  &kp Y                       &kp U           &kp I           &kp O          &kp P              &kp BSLH
 &mt LA(LS(LCTRL)) ESCAPE  &hrm_l LEFT_GUI A  &hrm_l LEFT_ALT S  &hrm_l LCTRL D  &hrm_l LSHFT F       &kp G                             &none  &kp H                       &hrm_r RSHFT J  &hrm_r RCTRL K  &hrm_r RALT L  &hrm_r RMETA SEMI  &kp APOS
 &kp LSHFT                 &kp Z              &kp X              &kp C           &kp V                &kp B                             &none  &kp N                       &kp M           &kp COMMA       &kp DOT        &kp FSLH           &kp RIGHT_SHIFT
-&none                     &kp F23            &mo 6              &lt 5 DELETE    &lt_sk 2 LEFT_SHIFT  &mt LS(LC(LA(LGUI))) BACKSPACE    &none  &mt LS(LC(LA(LGUI))) ENTER  &lt 2 SPACE     &lt 5 TAB       &mo 6          &kp F24
+&none                     &kp F23            &mo 6              &lt 5 DELETE    &hold_sticky LEFT_SHIFT LEFT_SHIFT  &mt LS(LC(LA(LGUI))) BACKSPACE    &none  &mt LS(LC(LA(LGUI))) ENTER  &lt 2 SPACE     &lt 5 TAB       &mo 6          &kp F24
             >;
 
             display-name = "windows";
@@ -147,7 +147,7 @@
 &mt LS(LC(LA(LGUI))) TAB  &kp Q           &kp W              &kp E               &kp R                &kp T                             &none  &kp Y                       &kp U           &kp I           &kp O          &kp P              &kp BSLH
 &mt LA(LS(LCTRL)) ESCAPE  &hrm_l LCTRL A  &hrm_l LEFT_ALT S  &hrm_l LEFT_META D  &hrm_l LSHFT F       &kp G                             &none  &kp H                       &hrm_r RSHFT J  &hrm_r RMETA K  &hrm_r RALT L  &hrm_r RCTRL SEMI  &hrm_r LA(LS(LCTRL)) APOSTROPHE
 &kp LSHFT                 &kp Z           &kp X              &kp C               &kp V                &kp B                             &none  &kp N                       &kp M           &kp COMMA       &kp DOT        &kp FSLH           &kp RIGHT_SHIFT
-&none                     &kp F23         &mo 6              &lt 5 DELETE        &lt_sk 4 LEFT_SHIFT  &mt LS(LC(LA(LGUI))) BACKSPACE    &none  &mt LS(LC(LA(LGUI))) ENTER  &lt 4 SPACE     &lt 5 TAB       &mo 6          &kp F24
+&none                     &kp F23         &mo 6              &lt 5 DELETE        &hold_sticky LEFT_SHIFT LEFT_SHIFT  &mt LS(LC(LA(LGUI))) BACKSPACE    &none  &mt LS(LC(LA(LGUI))) ENTER  &lt 4 SPACE     &lt 5 TAB       &mo 6          &kp F24
             >;
 
             display-name = "macos";
