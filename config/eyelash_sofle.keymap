@@ -171,7 +171,7 @@
 &none   &kp LS(GRAVE)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(LEFT_BRACKET)     &none  &kp LEFT_BRACKET   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp GRAVE  &none
 &trans  &kp LS(MINUS)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(RIGHT_BRACKET)    &none  &kp RIGHT_BRACKET  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &none
 &trans  &kp LS(EQUAL)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(BACKSLASH)        &none  &kp BSLH           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL  &trans
-&none   &trans         &kp LS(N0)        &trans            &trans            &trans                   &none  &trans             &trans        &trans        &kp N0        &trans
+&none   &trans         &kp LS(N0)        &trans            &trans            &trans                   &none  &trans             &trans        &none         &kp N0        &trans
             >;
 
             display-name = "numbol";
