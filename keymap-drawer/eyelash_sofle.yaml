@@ -125,11 +125,11 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - RGUI
+  - {t: '$$mdi:keyboard-return$$', h: Meh+LGUI}
+  - {t: '$$mdi:keyboard-space$$', h: win_nav}
+  - {t: '$$mdi:keyboard-tab$$', h: numbol}
+  - m&m
+  - F24
   win_nav:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
