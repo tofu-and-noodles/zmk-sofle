@@ -65,7 +65,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: numbol}
   - m&m
   - F24
-  win_basic:
+  win_base:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -92,7 +92,7 @@ layers:
   - O
   - P
   - {t: \, s: '|'}
-  - {t: '$$mdi:keyboard-esc$$', h: 'Alt+Sft+$$mdi:apple-keyboard-control$$'}
+  - $$mdi:keyboard-esc$$
   - A
   - S
   - D
@@ -105,7 +105,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
+  - Alt+Sft+$$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
@@ -119,17 +119,17 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-return$$', h: Meh+LGUI}
   - {t: '$$mdi:keyboard-space$$', h: win_nav}
   - {t: '$$mdi:keyboard-tab$$', h: numbol}
   - m&m
-  - F24
+  - LGUI
   win_nav:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -517,6 +517,6 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: macos, h: toggle}
   - {t: win, h: toggle}
-  - {t: win_basic, h: toggle}
+  - {t: win_base, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
